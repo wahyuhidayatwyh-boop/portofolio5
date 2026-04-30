@@ -525,8 +525,10 @@ section {
     }
 
     /* Hero Section Mobile Fix (Dashboard) */
-    .hero, .hero .slider-text, .hero .slider-item {
+    .hero, .hero .slider-text, .hero .slider-item, .home-slider, .home-slider .slider-item {
         touch-action: pan-y !important; /* Force allow vertical scrolling */
+        height: auto !important; /* Prevent locking to screen height */
+        min-height: 500px !important;
     }
 
     .hero .slider-text {
@@ -549,6 +551,7 @@ section {
         z-index: 1 !important;
         margin-bottom: 20px !important;
         transform: none !important;
+        min-height: 280px !important; /* Overriding js-fullheight */
     }
 
     .hero .one-forth {
