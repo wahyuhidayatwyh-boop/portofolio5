@@ -524,21 +524,20 @@ section {
         font-size: 30px !important;
     }
 
-    /* Hero Section Mobile Fix (Dashboard) */
+    /* Hero Section Mobile Fix (Dashboard) - Restoring Full Height */
     .hero, .hero .slider-text, .hero .slider-item, .home-slider, .home-slider .slider-item, 
     .owl-carousel, .owl-stage-outer, .owl-stage {
         touch-action: pan-y !important; /* Force allow vertical scrolling even inside the slider */
-        height: auto !important; /* Prevent locking to screen height */
-        min-height: 500px !important;
+        height: 100vh !important; /* Restore Full Screen Height */
+        min-height: 100vh !important;
     }
 
     .hero .slider-text {
         display: flex !important;
         flex-direction: column !important;
-        height: auto !important;
-        min-height: 500px !important;
-        padding: 60px 20px 20px 20px !important;
-        justify-content: flex-start !important;
+        height: 100vh !important;
+        padding: 80px 20px 40px 20px !important;
+        justify-content: center !important; /* Center content vertically in full height */
     }
 
     .hero .one-third.img {
