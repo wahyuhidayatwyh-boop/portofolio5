@@ -1,0 +1,758 @@
+
+/* Custom overrides for Dark Green and Dominant White theme */
+
+:root {
+    --primary-green: #1b4332; /* Very Dark Green */
+    --light-green: #2d6a4f;
+    --accent-green: #52b788; /* Lighter Green for Accents/Hover */
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-text: #212529;
+    --muted-text: #6c757d;
+}
+
+/* Global Body Override */
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    position: relative;
+}
+
+body {
+    background: var(--white) !important;
+    color: var(--dark-text) !important;
+}
+
+/* Navbar - Keep it Dark Green for the "Top" */
+.ftco_navbar {
+    background: var(--primary-green) !important;
+    top: 0 !important;
+    padding: 15px 0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000 !important;
+}
+
+.ftco-navbar-light.scrolled {
+    background: var(--white) !important;
+    padding: 10px 0 !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1) !important;
+}
+
+.ftco-navbar-light.scrolled .nav-link,
+.ftco-navbar-light.scrolled .nav-link span {
+    color: var(--dark-text) !important;
+}
+
+.ftco-navbar-light.scrolled .nav-link.active,
+.ftco-navbar-light.scrolled .nav-link.active span {
+    color: var(--primary-green) !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand {
+    color: var(--primary-green) !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-toggler {
+    color: var(--dark-text) !important;
+    border-color: rgba(0,0,0,.1) !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-toggler span {
+    color: var(--dark-text) !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    color: var(--accent-green) !important;
+}
+
+/* Navbar Underline */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span:before {
+    background: var(--accent-green) !important;
+}
+
+.ftco-navbar-light .navbar-brand {
+    color: var(--white) !important;
+}
+
+/* Hero Section */
+.hero .overlay {
+    background: var(--primary-green) !important;
+    opacity: 0.85 !important;
+    z-index: 1;
+}
+
+.hero .container {
+    z-index: 2;
+    position: relative;
+}
+
+.hero .one-third.img {
+    z-index: 3 !important;
+    opacity: 1 !important; /* Ensure image is fully opaque */
+    background-size: contain !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+.hero .text .subheading {
+    color: var(--accent-green) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.hero .text h1 {
+    color: var(--white) !important;
+}
+
+.hero .text h1 span {
+    color: var(--accent-green) !important; 
+}
+
+.hero .text h2 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.hero .text p {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Slider Dots */
+.owl-carousel .owl-dots .owl-dot.active {
+    background: var(--accent-green) !important;
+}
+
+.owl-carousel .owl-dots .owl-dot:after {
+    border-color: var(--accent-green) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--accent-green) !important;
+    border: 1px solid var(--accent-green) !important;
+    color: var(--white) !important;
+}
+
+.btn-primary:hover {
+    background: var(--light-green) !important;
+    border: 1px solid var(--light-green) !important;
+}
+
+.btn-white.btn-outline-white {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: var(--white) !important;
+}
+
+.btn-white.btn-outline-white:hover {
+    background: var(--white) !important;
+    color: var(--primary-green) !important;
+    border-color: var(--white) !important;
+}
+
+/* Section Headings and Spacing */
+section {
+    scroll-margin-top: 80px; /* Offset for the fixed header */
+}
+
+.ftco-section {
+    background-color: var(--white) !important;
+    padding: 7em 0 !important;
+}
+
+.heading-section h2 {
+    color: var(--primary-green) !important;
+}
+
+.heading-section h1.big {
+    color: rgba(27, 67, 50, 0.05) !important;
+}
+
+.heading-section .subheading {
+    color: var(--accent-green) !important;
+}
+
+/* About Section */
+.img-about .overlay {
+    display: none !important; /* Remove overlay that makes it "submerged" */
+}
+
+.img-about .img {
+    background-position: top center !important;
+}
+
+.about-info li span:first-child {
+    color: var(--primary-green) !important;
+}
+
+.about-info li span {
+    color: var(--dark-text) !important;
+}
+
+/* Resume Section */
+.resume-wrap {
+    background: var(--light-gray) !important;
+    border-left: 5px solid var(--primary-green);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.resume-wrap .date {
+    color: var(--primary-green) !important;
+}
+
+.resume-wrap h2 {
+    color: var(--dark-text) !important;
+}
+
+.resume-wrap .position {
+    color: var(--muted-text) !important;
+}
+
+.resume-wrap p {
+    color: var(--dark-text) !important;
+}
+
+/* Services Section */
+.services-1 {
+    background: var(--white) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+    padding: 0 !important; /* Remove padding to allow image to span top */
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.services-1 .img-service {
+    width: 100%;
+    height: 300px; /* Increased height */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.services-1:hover .img-service {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.services-1 .icon i {
+    color: var(--primary-green) !important;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services-1 .desc h3 {
+    color: var(--primary-green) !important;
+}
+
+.services-1 .desc h3:after {
+    background: var(--primary-green) !important;
+}
+
+.services-1:hover {
+    background: var(--primary-green) !important;
+}
+
+.services-1:hover .icon i, 
+.services-1:hover .desc h3, 
+.services-1:hover .desc h3 a {
+    color: var(--white) !important;
+}
+
+.services-1:hover .desc h3:after {
+    background: var(--white) !important;
+}
+
+/* Skills Section */
+.progress {
+    background: #e9ecef !important;
+    height: 10px !important; /* Smaller height */
+    margin-bottom: 20px !important;
+    overflow: visible !important;
+}
+
+.progress-bar {
+    background: var(--primary-green) !important;
+    border-radius: 5px;
+}
+
+.progress-wrap h3 {
+    color: var(--dark-text) !important;
+    font-size: 14px !important; /* Smaller font */
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+}
+
+.progress-bar span {
+    color: var(--primary-green) !important;
+    font-size: 11px !important; /* Smaller percentage font */
+    top: -25px !important;
+}
+
+.progress-wrap {
+    margin-bottom: 10px !important;
+}
+
+/* Projects Section */
+.project .overlay {
+    background: var(--primary-green) !important;
+}
+
+.project .text h3 a {
+    color: var(--white) !important;
+}
+
+/* Counter Section */
+.ftco-counter .block-18 {
+    background: var(--light-gray) !important;
+}
+
+.ftco-counter .text strong.number {
+    color: var(--primary-green) !important;
+}
+
+.ftco-counter .text span {
+    color: var(--muted-text) !important;
+}
+
+/* Blog Section */
+.blog-entry .text .heading a {
+    color: var(--dark-text) !important;
+}
+
+.blog-entry .text .heading a:hover {
+    color: var(--primary-green) !important;
+}
+
+.blog-entry .meta span, .blog-entry .meta a {
+    color: var(--accent-green) !important;
+}
+
+/* Hire Me Section */
+.ftco-hireme {
+    background: var(--primary-green) !important;
+}
+
+.ftco-hireme h2 {
+    color: var(--white) !important;
+}
+
+/* Footer (White background as requested) */
+.ftco-footer {
+    background: var(--white) !important;
+    color: var(--dark-text) !important;
+    border-top: 1px solid #eee;
+}
+
+.ftco-footer .ftco-footer-widget h2 {
+    color: var(--primary-green) !important;
+}
+
+.ftco-footer p, .ftco-footer a, .ftco-footer li, .ftco-footer span {
+    color: var(--dark-text) !important;
+}
+
+.ftco-footer-social li a {
+    background: rgba(27, 67, 50, 0.1) !important;
+    color: var(--primary-green) !important;
+}
+
+.ftco-footer-social li a:hover {
+    background: var(--primary-green) !important;
+    color: var(--white) !important;
+}
+
+/* Contact Section Image */
+.contact-section .img {
+    background-position: center bottom !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    min-height: 450px; /* Ensure enough height to see the whole person */
+}
+
+.contact-section .box h3 {
+    color: var(--primary-green) !important;
+    font-weight: 700 !important;
+}
+
+.contact-section .box p, 
+.contact-section .box a, 
+.contact-section .box span {
+    color: var(--dark-text) !important;
+    word-break: break-all !important; /* Force break long emails on all devices */
+    overflow-wrap: break-word !important;
+}
+
+.contact-section .box .icon span {
+    color: var(--primary-green) !important;
+}
+
+.contact-section .box {
+    background: var(--light-gray) !important;
+}
+
+/* Small Award Card Styling */
+.award-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.award-card {
+    background: var(--light-gray);
+    border-radius: 12px;
+    padding: 15px;
+    width: calc(25% - 15px); /* 4 columns */
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-green);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 991px) {
+    .award-card {
+        width: calc(33.33% - 15px); /* 3 columns */
+    }
+}
+
+@media (max-width: 767px) {
+    .award-card {
+        width: calc(50% - 15px); /* 2 columns */
+    }
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    background: var(--white);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.award-card .award-icon {
+    font-size: 30px;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.award-card .award-text {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--dark-text);
+}
+
+/* Pagination Styling */
+.award-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.award-pagination .page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-green);
+    background: transparent;
+    color: var(--primary-green);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.award-pagination .page-btn.active {
+    background: var(--primary-green);
+    color: var(--white);
+}
+
+.award-pagination .page-btn:hover:not(.active) {
+    background: rgba(27, 67, 50, 0.1);
+}
+
+.award-card.d-none {
+    display: none !important;
+}
+
+@media (max-width: 767.98px) {
+    .ftco_navbar .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .navbar-brand {
+        font-size: 14px !important; /* Smaller to give room */
+        margin-right: 10px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px !important;
+    }
+
+    .heading-section h1.big {
+        display: none !important; /* Hide oversized background text on mobile */
+    }
+
+    .heading-section h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+
+    .resume-wrap {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .resume-wrap h2 {
+        font-size: 18px !important;
+    }
+
+    .hero .text h1 {
+        font-size: 30px !important;
+    }
+
+    /* Hero Section Mobile Fix (Dashboard) */
+    .hero .slider-text {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 500px !important;
+        padding: 60px 20px 20px 20px !important;
+        justify-content: flex-start !important;
+    }
+
+    .hero .one-third.img {
+        height: 280px !important;
+        width: 100% !important;
+        order: 1 !important;
+        position: relative !important;
+        background-position: center bottom !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        z-index: 1 !important;
+        margin-bottom: 20px !important;
+        transform: none !important;
+    }
+
+    .hero .one-forth {
+        width: 100% !important;
+        order: 2 !important;
+        padding-top: 0 !important;
+        text-align: center !important;
+        z-index: 2 !important;
+        transform: none !important;
+        display: flex !important;
+        position: relative !important;
+        height: auto !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .one-forth .text {
+        transform: none !important;
+        padding: 0 !important;
+    }
+
+    .hero .text h1 {
+        font-size: 26px !important;
+        margin-bottom: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero .text h2 {
+        font-size: 18px !important;
+    }
+
+    .ftco-section {
+        padding: 4em 0 !important;
+    }
+
+    .services-1 .img-service {
+        height: 150px !important;
+    }
+
+    .services-1 .desc {
+        padding: 10px !important;
+    }
+
+    .services-1 .desc h3 {
+        font-size: 14px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Force 2 columns for services on mobile */
+    #services-section .row {
+        margin-right: -5px !important;
+        margin-left: -5px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    #services-section .row > div {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding: 5px !important;
+    }
+    
+    .services-1 {
+        margin-bottom: 10px !important;
+        width: 100% !important;
+    }
+
+    .about-info li {
+        margin-bottom: 15px !important;
+    }
+
+    .about-info li span:first-child {
+        width: 100px !important;
+        min-width: 100px !important;
+    }
+
+    .ftco-counter .text strong.number {
+        font-size: 30px !important;
+    }
+
+    /* Prevent Award Cards from overflowing */
+    .award-grid {
+        width: 100% !important;
+        margin: 0 !important;
+        gap: 10px !important;
+    }
+
+    .about-info li span:last-child, 
+    .contact-info p a,
+    .ftco-footer-widget .text {
+        word-break: break-all !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .award-card {
+        width: calc(50% - 5px) !important;
+        min-height: 100px !important;
+        margin-bottom: 10px !important;
+        padding: 10px !important;
+    }
+
+    .award-card .award-icon {
+        font-size: 20px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .award-card .award-text {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .award-pagination .page-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /* Smaller Skills on Mobile */
+    .progress-wrap h3 {
+        font-size: 12px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .progress {
+        height: 8px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .progress-bar span {
+        font-size: 10px !important;
+        top: -22px !important;
+    }
+
+    /* Tidy Contact Section on Mobile */
+    .contact-section .box {
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contact-section .box .icon {
+        width: 50px !important;
+        height: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contact-section .box .icon span {
+        font-size: 20px !important;
+    }
+
+    .contact-section .box h3 {
+        font-size: 14px !important;
+        margin-bottom: 8px !important; /* Increased space between label and info */
+        font-weight: 700 !important;
+    }
+
+    .contact-section .box p, .contact-section .box a {
+        font-size: 11px !important;
+        word-break: break-all !important; /* Force break long emails */
+        overflow-wrap: break-word !important;
+        display: block !important;
+        line-height: 1.4 !important;
+    }
+
+    .contact-section .box {
+        padding: 15px 10px !important; /* Narrower padding to give text more room */
+        margin-bottom: 10px !important;
+        overflow: hidden !important; /* Ensure nothing leaks out */
+    }
+
+    .contact-section .img {
+        min-height: 250px !important; /* Smaller image on mobile */
+        margin-bottom: 20px !important;
+    }
+
+    .contact-section .heading-section {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        max-width: 140px !important;
+        font-size: 13px !important;
+    }
+
+    .hero .text .subheading {
+        font-size: 12px !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .block-9 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .block-9 .col-md-6.d-flex {
+        order: 1 !important;
+    }
+
+    .block-9 .col-md-6.order-md-last {
+        order: 2 !important;
+        padding-top: 20px !important;
+    }
+
+    .ftco-about .row {
+        flex-direction: column !important;
+    }
+
+    .img-about {
+        height: 400px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+/* Loader */
+#ftco-loader .path {
+    stroke: var(--primary-green) !important;
+}
