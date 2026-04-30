@@ -12,15 +12,16 @@
 }
 
 /* Global Body Override */
-html, body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-    position: relative;
+html {
+    width: 100%;
 }
 
 body {
     background: var(--white) !important;
     color: var(--dark-text) !important;
+    overflow-x: hidden !important; /* Keep only on body to prevent horizontal wiggle without locking vertical scroll */
+    width: 100%;
+    position: relative;
 }
 
 /* Navbar - Keep it Dark Green for the "Top" */
