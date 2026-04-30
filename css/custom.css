@@ -81,6 +81,7 @@ body {
     background: var(--primary-green) !important;
     opacity: 0.85 !important;
     z-index: 1;
+    pointer-events: none !important; /* Prevent overlay from blocking touch scroll */
 }
 
 .hero .container {

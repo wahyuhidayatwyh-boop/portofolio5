@@ -37,8 +37,8 @@
 	};
 	loader();
 
-	// Scrollax
-   $.Scrollax();
+	// Scrollax disabled to fix Chrome mobile scroll lock
+   // $.Scrollax();
 
 
 
