@@ -525,8 +525,9 @@ section {
     }
 
     /* Hero Section Mobile Fix (Dashboard) */
-    .hero, .hero .slider-text, .hero .slider-item, .home-slider, .home-slider .slider-item {
-        touch-action: pan-y !important; /* Force allow vertical scrolling */
+    .hero, .hero .slider-text, .hero .slider-item, .home-slider, .home-slider .slider-item, 
+    .owl-carousel, .owl-stage-outer, .owl-stage {
+        touch-action: pan-y !important; /* Force allow vertical scrolling even inside the slider */
         height: auto !important; /* Prevent locking to screen height */
         min-height: 500px !important;
     }
