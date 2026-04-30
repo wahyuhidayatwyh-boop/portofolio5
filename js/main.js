@@ -7,6 +7,8 @@
 
 	"use strict";
 
+	// Stellar parallax disabled to fix Chrome mobile scroll lock
+	/*
 	$(window).stellar({
     responsive: true,
     parallaxBackgrounds: true,
@@ -15,6 +17,7 @@
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
+  */
 
 
 	var fullHeight = function() {

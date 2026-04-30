@@ -12,16 +12,22 @@
 }
 
 /* Global Body Override */
+html, body {
+    height: auto !important;
+    min-height: 100% !important;
+    width: 100% !important;
+}
+
 html {
-    width: 100%;
+    overflow-y: scroll; /* Force vertical scrollbar area */
 }
 
 body {
     background: var(--white) !important;
     color: var(--dark-text) !important;
-    overflow-x: hidden !important; /* Keep only on body to prevent horizontal wiggle without locking vertical scroll */
-    width: 100%;
+    overflow-x: hidden !important; 
     position: relative;
+    -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS/Chrome */
 }
 
 /* Navbar - Keep it Dark Green for the "Top" */
