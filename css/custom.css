@@ -5,8 +5,8 @@
     --primary-green: #1b4332; /* Very Dark Green */
     --light-green: #2d6a4f;
     --accent-green: #52b788; /* Lighter Green for Accents/Hover */
-    --white: #FFFDF0; /* Bright Cream */
-    --light-gray: #F8F5E1; /* Muted Cream */
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
     --dark-text: #212529;
     --muted-text: #6c757d;
 }
@@ -98,9 +98,6 @@ body {
 .hero .one-third.img {
     z-index: 3 !important;
     opacity: 1 !important; /* Ensure image is fully opaque */
-    background-size: contain !important;
-    background-position: center bottom !important;
-    background-repeat: no-repeat !important;
 }
 
 .hero .text .subheading {
