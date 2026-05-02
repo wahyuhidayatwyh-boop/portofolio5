@@ -536,27 +536,27 @@ section {
         display: flex !important;
         flex-direction: column !important;
         height: 100vh !important;
-        padding: 80px 20px 40px 20px !important;
-        justify-content: center !important; /* Center content vertically in full height */
+        padding: 110px 20px 40px 20px !important; /* Increased top padding to avoid navbar */
+        justify-content: flex-start !important; /* Align to top to give more space for image below */
     }
 
     .hero .one-third.img {
-        height: 280px !important;
+        height: 250px !important; /* Slightly smaller to fit better */
         width: 100% !important;
-        order: 1 !important;
+        order: 2 !important; /* Move image to bottom */
         position: relative !important;
         background-position: center bottom !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         z-index: 1 !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 0 !important;
         transform: none !important;
-        min-height: 280px !important; /* Overriding js-fullheight */
+        min-height: 250px !important; 
     }
 
     .hero .one-forth {
         width: 100% !important;
-        order: 2 !important;
+        order: 1 !important; /* Move text to top */
         padding-top: 0 !important;
         text-align: center !important;
         z-index: 2 !important;
@@ -566,6 +566,7 @@ section {
         height: auto !important;
         align-items: center;
         justify-content: center;
+        margin-bottom: 30px !important;
     }
 
     .hero .one-forth .text {
@@ -574,13 +575,15 @@ section {
     }
 
     .hero .text h1 {
-        font-size: 26px !important;
+        font-size: 24px !important; /* Smaller font to prevent messy line breaks */
         margin-bottom: 10px !important;
-        line-height: 1.2 !important;
+        line-height: 1.1 !important;
+        font-weight: 800 !important;
     }
 
     .hero .text h2 {
-        font-size: 18px !important;
+        font-size: 15px !important;
+        letter-spacing: 1px !important;
     }
 
     .ftco-section {
