@@ -7,8 +7,9 @@
     --accent-green: #52b788;
     /* Lighter Green for Accents/Hover */
     --white: #ffffff;
+    /* Bright Cream */
     --light-gray: #ffffff;
-    /* Set to pure white to remove any cream/gray tint */
+    /* Muted Cream */
     --dark-text: #212529;
     --muted-text: #6c757d;
 }
@@ -105,10 +106,8 @@ body {
     z-index: 3 !important;
     opacity: 1 !important;
     /* Ensure image is fully opaque */
-    background-position: top center !important;
-    /* Anchor to top to prevent head cut-off */
     background-size: contain !important;
-    /* Ensure the whole person is visible */
+    background-position: center bottom !important;
     background-repeat: no-repeat !important;
 }
 
@@ -579,26 +578,25 @@ section {
     }
 
     .hero .one-third.img {
-        height: 350px !important;
-        /* Increased height to give more room for the head */
+        height: 250px !important;
+        /* Slightly smaller to fit better */
         width: 100% !important;
-        order: 2 !important;
-        /* Move image to bottom */
+        order: 1 !important;
+        /* Move image to top */
         position: relative !important;
-        background-position: top center !important;
-        /* Fix head cut-off */
+        background-position: center bottom !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         z-index: 1 !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 30px !important;
         transform: none !important;
-        min-height: 350px !important;
+        min-height: 250px !important;
     }
 
     .hero .one-forth {
         width: 100% !important;
-        order: 1 !important;
-        /* Move text to top */
+        order: 2 !important;
+        /* Move text to bottom */
         padding-top: 0 !important;
         text-align: center !important;
         z-index: 2 !important;
@@ -608,7 +606,7 @@ section {
         height: auto !important;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px !important;
+        margin-bottom: 0 !important;
     }
 
     .hero .one-forth .text {
