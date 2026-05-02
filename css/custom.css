@@ -5,8 +5,8 @@
     --primary-green: #1b4332; /* Very Dark Green */
     --light-green: #2d6a4f;
     --accent-green: #52b788; /* Lighter Green for Accents/Hover */
-    --white: #ffffff;
-    --light-gray: #f8f9fa;
+    --white: #FFFDF0; /* Bright Cream */
+    --light-gray: #F8F5E1; /* Muted Cream */
     --dark-text: #212529;
     --muted-text: #6c757d;
 }
